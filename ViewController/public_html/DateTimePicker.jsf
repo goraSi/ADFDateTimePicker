@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="DateTimePicker.jsf" id="d1">
+        <af:form id="f1">
+            <af:declarativeComponent id="dc1" viewId="/component/DateTimePicker.jsf">
+                <f:attribute name="label" value="Label:"/>
+                <f:attribute name="value" value="#{viewScope.DateTimePickerBean.datetime}"/>
+                <f:attribute name="pattern" value="dd.MM.yyyy HH:mm"/>
+            </af:declarativeComponent>
+            <af:inputDate id="id1" value="#{viewScope.DateTimePickerBean.datetime}">
+                <af:convertDateTime pattern="dd.MM.yyyy HH:mm"/>
+            </af:inputDate>
+            <af:panelLabelAndMessage label="Value:" id="plam1">
+                <af:outputText value="#{viewScope.DateTimePickerBean.datetime}" id="ot1" partialTriggers="dc1"/>
+            </af:panelLabelAndMessage>
+        </af:form>
+    </af:document>
+</f:view>

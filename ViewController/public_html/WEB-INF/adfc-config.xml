@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1250" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <managed-bean id="__1">
+    <managed-bean-name>DateTimePicker</managed-bean-name>
+    <managed-bean-class>view.DateTimePicker</managed-bean-class>
+    <managed-bean-scope>backingBean</managed-bean-scope>
+  </managed-bean>
+  <managed-bean id="__2">
+    <managed-bean-name>DateTimePickerBean</managed-bean-name>
+    <managed-bean-class>view.DateTimePickerBean</managed-bean-class>
+    <managed-bean-scope>view</managed-bean-scope>
+  </managed-bean>
+</adfc-config>
